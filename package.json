@@ -1,0 +1,24 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:fce": "cross-env SERVICE=fce cucumber-js test --config configs/cucumber-fce.js",
+    "test:gdn": "cross-env SERVICE=gdn cucumber-js test --config configs/cucumber-gdn.js",
+    "test": "cross-env NODE_ENV=${ENV_TEST:-development} service=$SERVICE cucumber-js test --config configs/cucumber-$SERVICE.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "ts-node": "^10.9.2"
+  }
+}
