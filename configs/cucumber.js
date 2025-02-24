@@ -7,12 +7,8 @@
 
 //configs/cucumber.js
 module.exports = {
-  formatOptions: {
-    snippetInterface: "async-await"
-  },
-  publishQuiet: true,
-  dryRun: false,
-  requireModule: [
-    "ts-node/register"
-  ]
-}
+  requireModule: ['ts-node/register'],
+  format: ['progress-bar', 'html:cucumber-report.html'],
+  formatOptions: { snippetInterface: 'async-await' },
+  publishQuiet: true
+};

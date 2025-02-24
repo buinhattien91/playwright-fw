@@ -6,6 +6,7 @@
   "scripts": {
     "test:fce": "cross-env SERVICE=fce cucumber-js test --config configs/cucumber-fce.js",
     "test:gdn": "cross-env SERVICE=gdn cucumber-js test --config configs/cucumber-gdn.js",
+    "test:rahulshettyacademy": "cross-env SERVICE=rahulshettyacademy cucumber-js test --config configs/cucumber-rahulshettyacademy.js",
     "test": "cross-env NODE_ENV=${ENV_TEST:-development} service=$SERVICE cucumber-js test --config configs/cucumber-$SERVICE.js"
   },
   "keywords": [],
